@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4ede7;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.splash-container {
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+}
+
+.splash-text {
+    font-size: 80px;
+    color: black;
+    font-weight: bold;
+}

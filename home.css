@@ -1,0 +1,204 @@
+/* General styles */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4ede7;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    min-height: 100vh;
+}
+
+/* Navigation Bar */
+.nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    border-bottom: 2px solid black;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+/* Profile Card Hover Effect */
+.card-container {
+    perspective: 1000px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 1200px;
+    height: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    border-radius: 25px; 
+    background-color: #f4ede7; 
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+/* Front and Back of the Card */
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Front Side */
+.card-front {
+    background: #f4ede7; 
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    position: relative;
+}
+
+/* Image container */
+.card-front .image-container {
+    width: 250px; 
+    height: 350px;  
+    border-radius: 125px 125px 0 0;  
+    overflow: hidden;
+    position: absolute;  
+    right: 2in; 
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+
+.card-front .image-container img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+/* Text content */
+.card-front .text-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px; 
+    flex-grow: 1; 
+}
+
+.card-front h1 {
+    font-size: 36px; 
+    margin: 10px 0;
+}
+
+.card-front p {
+    font-size: 18px;
+    color: #777;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Back Side */
+.card-back {
+    background: white;
+    color: black;
+    transform: rotateY(180deg);
+    text-align: center;
+    padding: 20px;
+}
+
+.card-back p {
+    font-size: 24px; 
+}
+
+/* About Me & Portfolio Sections */
+.about-me-text, .portfolio-text {
+    font-size: 30px;
+    margin-top: 1in;
+    width: 85%;
+    max-width: 1100px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: normal;
+}
+
+.about-me-text p, .portfolio-text p {
+    font-size: 23px;
+    font-weight: normal;
+    margin-top: 0.5in;
+    max-width: 100%;
+}
+
+.portfolio-text h3 {
+    font-size: 23px; 
+    font-weight: normal;
+}
+
+.portfolio-text h3 a {
+    text-decoration: none; 
+    color: black; 
+    font-weight: bold;
+}
+
+.portfolio-text ul {
+    font-size: 23px;
+    list-style-type: disc;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-style: italic;
+}
+
+/* Links Section */
+.links-text {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    text-align: center; 
+}
+
+.links-text h2 {
+    font-size: 40px; 
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+.links-text .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5in; 
+}
+
+.links-text .social-icons a img {
+    width: 60px; 
+    height: 60px;
+}
