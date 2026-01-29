@@ -141,7 +141,7 @@ body {
 }
 
 /* About Me & Portfolio Sections */
-.about-me-text, .portfolio-text {
+.about-me-text, .portfolio-text, .expirience-text {
     font-size: 30px;
     margin-top: 1in;
     width: 85%;
@@ -201,4 +201,24 @@ body {
 .links-text .social-icons a img {
     width: 60px; 
     height: 60px;
+}
+
+/*expirience section */
+.expirience-text h3 {
+    font-size: 23px; 
+    font-weight: normal;
+}
+
+.expirience-text h3 a {
+    text-decoration: none; 
+    color: black; 
+    font-weight: bold;
+}
+
+.expirience-text ul {
+    font-size: 23px;
+    list-style-type: disc;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-style: italic;
 }
