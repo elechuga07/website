@@ -5,39 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Websites</title>
     <link rel="stylesheet" href="home.css"> 
-    <script defer src="script.js"></script>
+    <!--<script defer src="script.js"></script> -->
 </head>
 <body>
     <div class="nav">
         <a href="#top">Information</a>
         <a href="#about-section">About Me</a>
-        <a href="#expirience-section">Expirience</a>
+        <a href="#expirience-section">Experience</a>
+        <a href="#education-section">Education</a>
         <a href="#portfolio-section">Projects</a>
-        <a href="#links-section">Links</a> 
     </div>
 
-    <div id="top" class="card-container">
-        <div class="card">
-            <div class="card-front">
-                <div class="text-content">
-                    <h1>Evelyn Lechuga</h1>
-                    <p>University of Texas Rio Grande Valley - 2025</p>
-                    <p>Bachelor of Science in Computer Science</p>
-                    <p>Minor in Asian Studies</p>
-                    <p>evelynlechuga07@gmail.com</p>
-                    <p>(956)265-7028</p>
-                </div>
-                <div class="image-container">
-                    <img src="png_pictures/personal_website_image.jpg" alt="Profile Picture">
-                </div>
+         <div class="social-icons">
+            <a href="https://github.com/elechuga07" target="_blank">
+                <img src="png_pictures/github_icon.png" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/elechuga8/" target="_blank">
+                <img src="png_pictures/linkedin_icon.png" alt="LinkedIn">
+            </a>
+        </div>
+
+    <div id="top" class="intro-containers">
+        <div class="hero">
+            <div class="text-content">
+                <p>Hi there! I'm</p>
+                <h1>Evelyn Lechuga</h1>
+                <h2>Computer Scientist</h2>
+                <h3>SQL, Python, Flutter, Dart, CSS, HTML</h3>
             </div>
 
-            <div class="card-back">
-                <p>Languages: Spanish, English<br>
-                    Programming Languages: Python, C++, C#, CSS, HTML, Javascript, Dart/Flutter</p>
+            <div class="image-container">
+
+                    <svg class="cloud" viewBox="0 0 200 120">
+            <path d="M45 95
+                    Q20 95 20 70
+                    Q20 45 45 45
+                    Q50 20 80 20
+                    Q100 0 130 20
+                    Q170 15 180 50
+                    Q195 55 195 80
+                    Q195 100 170 100
+                    Z"/>
+                </svg>
+                <img src="png_pictures/personal_website_image.jpg" alt="Profile Picture">
             </div>
         </div>
-    </div>
 
     <div id="about-section" class="about-me-text">
         <h2>About Me</h2>
@@ -52,10 +64,17 @@
              and enthusiasm to a dynamic team.</p>
 </div>
 <div id="expirience-section" class="expirience-text">
-        <h2>Expirience</h2>
+        <h2>Experience</h2>
         
     <div class = "expirience">
-            <h3>Part-Time Technology Support Specialist - McAllen ISD | September 2025 - Current</h3>
+                    <h3>IT & Data Analyst - Food Bank of the Rio Grande Valley | February 2026 - Current</h3>
+            <ul>
+                <li>Built and supported ETL pipelines using Azure Databricks to ingest, clean, transform, and validate data from multiple sources into analytics-ready datasets.</li>
+                <li>Collaborated with cross-functional teams to ensure data quality, reliability, and alignment with business requirements through structured data cleaning and transformation processes.</li>
+                <li>Developed Power BI dashboards and visualizations to communicate insights effectively, enabling data-driven decision-making for stakeholders.</li>
+            </ul>
+
+            <h3>Part-Time Technology Support Specialist - McAllen ISD | September 2025 - February 2026</h3>
             <ul>
                 <li>Delivered end-user technical support by diagnosing and resolving hardware, software, and classroom or office technology issues, ensuring minimal downtime and a consistent user experience.</li>
                 <li>Collaborated with IT teams and stakeholders to implement technology solutions, document procedures, and improve support workflows through clear communication and process optimization.</li>
@@ -70,8 +89,36 @@
             </ul>
 
     </div>
-</div>
+<div id="education-section" class="education-text">
+    <h2>Education</h2>
 
+    <div class="education">
+
+        <div class="education-card">
+
+            <div class="education-header">
+                <h3>Bachelor of Science in Computer Science</h3>
+                <span class="education-date">May 2025</span>
+            </div>
+
+            <p>University of Texas Rio Grande Valley</p>
+            <p class="minor">Minor in Asian Languages</p>
+
+        </div>
+
+        <div class="education-card">
+
+            <div class="education-header">
+                <h3>Associate of Science in Computer Science</h3>
+                <span class="education-date">May 2022</span>
+            </div>
+
+            <p>South Texas College</p>
+
+        </div>
+
+    </div>
+</div>
     <div id="portfolio-section" class="portfolio-text">
         <h2>Projects</h2>
 
@@ -102,18 +149,6 @@
                 <li>Implements JavaScript to enhance user experience with interactive elements</li>
                 <li>Structured with semantic HTML for accessibility and organized CSS for maintainable styling, ensuring a fast and optimized website performance.</li>
             </ul>
-        </div>
-    </div>
-
-    <div id="links-section" class="links-text">
-        <h2>Links</h2>
-        <div class="social-icons">
-            <a href="https://github.com/elechuga07" target="_blank">
-                <img src="png_pictures/github_icon.png" alt="GitHub">
-            </a>
-            <a href="https://www.linkedin.com/in/elechuga8/" target="_blank">
-                <img src="png_pictures/linkedin_icon.png" alt="LinkedIn">
-            </a>
         </div>
     </div>
 
