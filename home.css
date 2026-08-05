@@ -92,7 +92,7 @@ body{
 .text-content h4{font-size:15px;margin-top:20px;color:#777;}
 
 .image-container{
-    flex:1.2;
+    
     display:flex;
     justify-content:center;
     align-items:center;
@@ -103,16 +103,18 @@ body{
     position:absolute;
     width:570px;
     top:-40px;
-    right:-30px;
+    right:-50px;
+    left:1%;
     fill:var(--accent);
+    transform:translateX(0%);
     z-index:1;
 }
 
 .image-container img{
     width:min(350px,80vw);
-    height:min(350px,80vw);
-    object-fit:cover;
+    aspect-ratio:1;
     border-radius:50%;
+    object-fit:cover;
     position:relative;
     z-index:2;
 }
